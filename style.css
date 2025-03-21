@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(43, 43, 43);
+    color: antiquewhite;
+    font-family: "courier new"
+}
+div{
+    text-align: center;
+}
+h4{
+    color: beige;
+}
+p{
+    color: antiquewhite;
+}
+a{
+    color: aquamarine;
+
+}
+img{
+    border-radius: 2.5%;
+}
+h2{
+
+}
