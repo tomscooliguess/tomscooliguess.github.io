@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(43, 43, 43);
+    color: antiquewhite;
+    font-family: "courier new"
+}
+h1{
+  text-align: center
+}
+h4{
+    color: beige;
+}
+h2{
+    color: beige;
+}
+h5{
+    color: beige;
+}
+p{
+    color: antiquewhite;
+}
+a{
+    color: aquamarine;
+}
+img{
+    border-radius: 2.5%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(43, 43, 43);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: aquamarine;
+  color: black;
+}
+.card{
+  background-color:grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+.box1{
+  float:left;
+  border-style: solid;
+  border-color: aquamarine;
+  border-radius: 2.5%;
+  border-width: 4px;
+  padding:10px 10px;
+  margin: 10px 40px;
+  height: 500px;
+  width: 600px;
+}
+.box2{
+  float:right;
+  border-style: solid;
+  border-color: aquamarine;
+  border-radius: 2.5%;
+  border-width: 4px;
+  padding:10px 10px;
+  margin: 10px 40px;
+  height: 500px;
+  width: 600px;
+}

@@ -1,0 +1,34 @@
+body {
+  background-color: rgb(43, 43, 43);
+  color: antiquewhite;
+  font-family: "courier new";
+  cursor: url('https://cdn.glitch.global/c02e4d6f-d1ff-4117-9074-c085f8b63389/Kermit%20the%20Frog%20Animated--cursor--SweezyCursors.ico?v=1743183820015'), default;
+}
+div {
+  text-align: center;
+}
+h4 {
+  color: beige;
+}
+h2 {
+  color: beige;
+}
+p {
+  color: antiquewhite;
+}
+button {
+  color: black;
+  border: 5px solid aquamarine;
+  font-family: "courier new";
+  border-radius: 4.5%
+  
+}
+button:hover {
+  opacity: 1; /* perception of emptiness */
+  background-color: aquamarine;
+  color: #626254;
+  cursor: pointer;
+}
+img {
+  border-radius: 2.5%;
+}
