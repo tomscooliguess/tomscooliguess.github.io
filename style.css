@@ -1,6 +1,6 @@
 @font-face {
     font-family:'DarumadropOne';
-    src: url(fonts/Darumadrop_One/DarumadropOne-Regular.ttf) format("truetype")
+    src: url(fonts/DarumadropOne-Regular.ttf) format("truetype")
 }
 h1{
     font-family:'DarumadropOne', serif;
@@ -24,3 +24,4 @@ iframe{
 .Sub1{
     text-align: center;
 }
+
