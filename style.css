@@ -1,0 +1,26 @@
+@font-face {
+    font-family:'DarumadropOne';
+    src: url(fonts/Darumadrop_One/DarumadropOne-Regular.ttf) format("truetype")
+}
+h1{
+    font-family:'DarumadropOne', serif;
+    font-weight: 100;
+    text-align: center;
+    color: #fcb6f0;
+    -webkit-text-stroke: 2px #642172;
+    font-size: 50px;
+}
+p{
+    font-family:'DarumadropOne', serif;
+    font-weight: 100;
+}
+body{
+    background-color: #a147c2;
+}
+iframe{
+    margin-left: 70px;
+    margin-right: 50px;
+}
+.Sub1{
+    text-align: center;
+}
