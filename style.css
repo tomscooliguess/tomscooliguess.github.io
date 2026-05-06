@@ -9,21 +9,21 @@
 }
 
 body {
-  color:white;
-  font-family: Roboto;
-  font-weight: 339;
-  text-align: center;
-  background-image: url("faero.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;
-  flex-direction: column;
-  min-height: 100vh; /* Fill the entire screen height */
-  display: grid;
-  grid-template-rows: auto 1fr auto; /* Header/Footer auto-size, Main fills space */
-  margin: 0;
-  cursor: url('windows7_arrow.ico'), default;
-  cursor: url('windows7_link.ico'), pointer;
+  	color:white;
+  	font-family: Roboto;
+  	font-weight: 339;
+  	text-align: center;
+  	background-image: url("faero.jpg");
+  	background-repeat: no-repeat;
+  	background-size:cover;
+  	background-position: center;
+  	flex-direction: column;
+  	min-height: 100vh; /* Fill the entire screen height */
+  	display: grid;
+  	grid-template-rows: auto 1fr auto; /* Header/Footer auto-size, Main fills space */
+  	margin: 0;
+  	cursor: url('windows7_arrow.ico'), default;
+  	cursor: url('windows7_link.ico'), pointer;
   
 }
 
@@ -33,13 +33,13 @@ body {
 }
 
 .title{
-  font-size: 20px;
+  	font-size: 20px;
 }
 
 .hint{
-  text-align: left;
-  text-indent: 400px;
-  line-height: 100px;
+	text-align: left;
+	text-indent: 400px;
+	line-height: 100px;
 }
 
 .myButton {
@@ -58,7 +58,7 @@ body {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #528ecc;
 	transform: scale(1.05);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+	cursor: url('windows7_link.ico'), pointer;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
@@ -70,14 +70,14 @@ body {
 }
 
 .container {
-  display: flex;         
-  align-items: center;   
-  gap: 10px;            
+ 	display: flex;         
+  	align-items: center;   
+ 	gap: 10px;            
 }
 
 footer{
-  text-align: center;
-  color: white;
+	text-align: center;
+  	color: white;
 }
 
         
