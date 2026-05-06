@@ -1,11 +1,11 @@
 @font-face{
-  font-family:Roboto;
-  src: url(fonts/Roboto-wdth_wght.ttf);
+  	font-family:Roboto;
+  	src: url(fonts/Roboto-wdth_wght.ttf);
 }
 
 @font-face{
-  font-family:RobotoMono;
-  src: url(RobotoMono-wght.ttf);
+  	font-family:RobotoMono;
+  	src: url(RobotoMono-wght.ttf);
 }
 
 body {
