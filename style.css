@@ -23,7 +23,7 @@ body {
   grid-template-rows: auto 1fr auto; /* Header/Footer auto-size, Main fills space */
   margin: 0;
   cursor: url('windows7_arrow.ico'), default;
-  cursor: url('windows7_arrow.ico'), pointer;
+  cursor: url('windows7_link.ico'), pointer;
   
 }
 
