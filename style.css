@@ -40,7 +40,7 @@ body {
 	line-height: 100px;
 }
 
-.myButton {
+Button {
 	box-shadow:inset 0px 1px 0px 0px #dcecfb;
 	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
 	background-color:#bddbfa;
@@ -58,11 +58,11 @@ body {
 	transform: scale(1.05);
 	cursor: url('windows7_link.ico'), pointer;
 }
-.myButton:hover {
+Button:hover {
 	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
 	background-color:#80b5ea;
 }
-.myButton:active {
+Button:active {
 	position:relative;
 	top:1px;
 }
