@@ -1,11 +1,11 @@
 @font-face{
   	font-family:Roboto;
-  	src: url(fonts/Roboto-wdth_wght.ttf);
+  	src: url("fonts/Roboto-wdth_wght.ttf");
 }
 
 @font-face{
   	font-family:Pixelify Sans;
-  	src: url(fonts/PixelifySans-VariableFont_wght.ttf);
+  	src: url("fonts/PixelifySans-VariableFont_wght.ttf");
 }
 
 .pixelify-sans-<uniquifier> {
