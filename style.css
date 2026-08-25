@@ -10,6 +10,13 @@
   	src: url(RobotoMono-wght.ttf);
 }
 
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 body {
   	color:white;
   	font-family: "Pixelify Sans", sans-serif;
