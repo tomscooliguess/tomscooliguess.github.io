@@ -74,35 +74,102 @@ Button:active {
 	top:1px;
 }
 
-.container {
- 	display: flex;         
-  	align-items: center;   
- 	gap: 10px;            
+/* 1. Hide the checkbox */
+#nav-toggle {
+	display: none;
 }
 
+/* 2. Top Navbar Layout */
+.navbar {
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+/* 3. Animated Hamburger Icon Container */
+.toggle-btn {
+	width: 30px;
+	height: 22px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* The 3 lines of the hamburger menu */
+.toggle-btn span {
+	display: block;
+	height: 4px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 2px;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	transform-origin: left center;
+}
+
+/* 4. Sidebar Mechanics */
 #sidebar {
 	height: 100%;
 	width: 200px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #2BADEE;
-	padding-top: 20px;
+	background-color: #222;
+	padding-top: 80px;
+	transition: transform 0.3s ease;
+	z-index: 1;
 }
 #sidebar a {
-	padding: 10px 15px;
+	padding: 12px 20px;
 	text-decoration: none;
 	font-size: 16px;
-	color: #ffffff;
+	color: #fff;
 	display: block;
 }
 #sidebar a:hover {
-	background-color: #084F72;
+	background-color: #575757;
 }
+
+/* 5. Main Content Layout */
 #content {
-	margin-left: 200px;
 	padding: 20px;
+	transition: margin-left 0.3s ease;
+	margin-left: 200px;
 }
+
+/* ========================================================= */
+/* CSS State Changes (When Checked) */
+/* ========================================================= */
+
+/* Top bar: rotate clockwise */
+#nav-toggle:checked ~ .navbar .line1 {
+	transform: rotate(45deg);
+}
+
+/* Middle bar: fade out */
+#nav-toggle:checked ~ .navbar .line2 {
+	opacity: 0;
+}
+
+/* Bottom bar: rotate counter-clockwise */
+#nav-toggle:checked ~ .navbar .line3 {
+	transform: rotate(-45deg);
+}
+
+/* Slide sidebar out of view */
+#nav-toggle:checked ~ #sidebar {
+	transform: translateX(-200px);
+}
+
+/* Expand content to full width */
+#nav-toggle:checked ~ #content {
+	margin-left: 0;
+}
+
 
 footer{
 	text-align: center;
