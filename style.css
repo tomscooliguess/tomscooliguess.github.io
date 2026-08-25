@@ -80,10 +80,6 @@ Button:active {
  	gap: 10px;            
 }
 
-body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-}
 #sidebar {
 	height: 100%;
 	width: 200px;
