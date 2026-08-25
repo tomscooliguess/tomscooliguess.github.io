@@ -105,7 +105,6 @@ Button:active {
 	display: block;
 	height: 4px;
 	width: 100%;
-	background-color: #ffffff;
 	border-radius: 2px;
 	transition: transform 0.3s ease, opacity 0.3s ease;
 	transform-origin: left center;
@@ -118,7 +117,7 @@ Button:active {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #222;
+	background-color: #2BADEE;
 	padding-top: 80px;
 	transition: transform 0.3s ease;
 	z-index: 1;
@@ -131,7 +130,7 @@ Button:active {
 	display: block;
 }
 #sidebar a:hover {
-	background-color: #575757;
+	background-color: #298BBC;
 }
 
 /* 5. Main Content Layout */
