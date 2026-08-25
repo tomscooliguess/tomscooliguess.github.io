@@ -5,11 +5,7 @@
 
 @font-face{
   	font-family:Pixelify Sans;
-  	src: url(https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap);
-}
-@font-face{
-  	font-family:RobotoMono;
-  	src: url(RobotoMono-wght.ttf);
+  	src: url(fonts/PixelifySans-VariableFont_wght.ttf);
 }
 
 .pixelify-sans-<uniquifier> {
