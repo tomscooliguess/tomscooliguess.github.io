@@ -86,7 +86,7 @@ Button:active {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #0B79B1;
+	background-color: #2BADEE;
 	padding-top: 20px;
 }
 #sidebar a {
@@ -97,7 +97,7 @@ Button:active {
 	display: block;
 }
 #sidebar a:hover {
-	background-color: #575757;
+	background-color: #084F72;
 }
 #content {
 	margin-left: 200px;
