@@ -11,7 +11,7 @@
 }
 
 .pixelify-sans-<uniquifier> {
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Pixelify Sans";
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -19,7 +19,7 @@
 
 body {
   	color:white;
-  	font-family: "Pixelify Sans", sans-serif;
+  	font-family: "Pixelify Sans";
   	font-weight: 339;
   	text-align: center;
   	background-image: url("faero.jpg");
