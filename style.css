@@ -82,6 +82,14 @@ Button:active {
 
 /* 2. Floating Toggle Button (No black bar) */
 .toggle-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 30px;
+	height: 22px;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 3;
 	background: none;
 	border: none;
 	cursor: pointer;
