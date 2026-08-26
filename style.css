@@ -112,12 +112,12 @@ Button:active {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #add8e6; /* Light Blue background */
 	padding-top: 80px;
 	transition: transform 0.3s ease;
 	z-index: 2;
 	transform: translateX(-200px); /* Pushed off-screen initially */
 	box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+	backdrop-filter: blur(4px);
 }
 
 /* White Sidebar Links */
