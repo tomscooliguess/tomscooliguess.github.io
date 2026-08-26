@@ -99,9 +99,10 @@ Button:active {
 
 /* Animated hamburger lines */
 .menu-icon {
-  width: 30px;
-  height: auto;
-  display: block;
+	width: 30px;
+	height: auto;
+	display: block;
+	transition: filter 0.3s ease, transform 0.5s;
 }
 
 /* 3. Sidebar (Hidden by default using translateX) */
