@@ -56,6 +56,7 @@ Button {
 	border:1px solid #84bbf3;
 	display:inline-block;
 	color:#ffffff;
+	cursor: pointer;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
@@ -129,7 +130,6 @@ Button:active {
 	font-weight: bold;
 	display: block;
 	transition: background 0.2s;
-	cursor: url('windows7_link.ico'), pointer;
 }
 
 /* Slightly darker blue hover state */
