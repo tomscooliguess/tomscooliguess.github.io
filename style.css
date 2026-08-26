@@ -76,7 +76,7 @@ Button:active {
 }
 
 /* 1. Hide the checkbox */
-#nav-toggle {
+.nav-toggle {
 	display: none;
 }
 
@@ -144,7 +144,7 @@ Button:active {
 	transition: margin-left 0.3s ease;
 }
 
-#nav-toggle:checked + .toggle-btn .menu-icon {
+.nav-toggle:checked + .toggle-btn .menu-icon {
   filter: blur(4px); /* Adjust pixel depth to change blur strength */
 }
 
