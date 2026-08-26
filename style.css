@@ -96,14 +96,10 @@ Button:active {
 }
 
 /* Animated hamburger lines */
-.toggle-btn span {
-	display: block;
-	height: 4px;
-	width: 100%;
-	background-color: #333333; /* Dark color so it is visible on light bg */
-	border-radius: 2px;
-	transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
-	transform-origin: left center;
+.menu-icon {
+  width: 30px;
+  height: auto;
+  display: block;
 }
 
 /* 3. Sidebar (Hidden by default using translateX) */
