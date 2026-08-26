@@ -79,87 +79,97 @@ Button:active {
 	display: none;
 }
 
-
-/* 3. Animated Hamburger Icon Container */
+/* 2. Floating Toggle Button (No black bar) */
 .toggle-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
 	width: 30px;
 	height: 22px;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	z-index: 3; /* Keeps it above everything */
 }
 
-/* The 3 lines of the hamburger menu */
+/* Animated hamburger lines */
 .toggle-btn span {
 	display: block;
 	height: 4px;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #333333; /* Dark color so it is visible on light bg */
 	border-radius: 2px;
-	transition: transform 0.3s ease, opacity 0.3s ease;
+	transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 	transform-origin: left center;
 }
 
-/* 4. Sidebar Mechanics */
+/* 3. Sidebar (Hidden by default using translateX) */
 #sidebar {
 	height: 100%;
 	width: 200px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #2BADEE;
+	background-color: #add8e6; /* Light Blue background */
 	padding-top: 80px;
 	transition: transform 0.3s ease;
-	z-index: 1;
+	z-index: 2;
+	transform: translateX(-200px); /* Pushed off-screen initially */
+	box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
+
+/* White Sidebar Links */
 #sidebar a {
 	padding: 12px 20px;
 	text-decoration: none;
 	font-size: 16px;
-	color: #fff;
+	color: #ffffff; /* White text */
+	font-weight: bold;
 	display: block;
-}
-#sidebar a:hover {
-	background-color: #298BBC;
+	transition: background 0.2s;
 }
 
-/* 5. Main Content Layout */
+/* Slightly darker blue hover state */
+#sidebar a:hover {
+	background-color: #92c5de;
+}
+
+/* 4. Main Page Content (Full width by default) */
 #content {
-	padding: 20px;
+	padding: 40px 20px 20px 80px; /* Left padding leaves room for the floating button */
 	transition: margin-left 0.3s ease;
+}
+
+/* ========================================================= */
+/* CSS State Changes (When Checked / Opened) */
+/* ========================================================= */
+
+/* Slide sidebar INTO view */
+#nav-toggle:checked ~ #sidebar {
+	transform: translateX(0);
+}
+
+/* Push content right to make space for the open sidebar */
+#nav-toggle:checked ~ #content {
 	margin-left: 200px;
 }
 
-/* ========================================================= */
-/* CSS State Changes (When Checked) */
-/* ========================================================= */
+/* Change hamburger line colors to white when menu is open over the blue background */
+#nav-toggle:checked ~ .toggle-btn span {
+	background-color: #ffffff;
+}
 
-/* Top bar: rotate clockwise */
-#nav-toggle:checked ~ .navbar .line1 {
+/* Transform hamburger to an X */
+#nav-toggle:checked ~ .toggle-btn .line1 {
 	transform: rotate(45deg);
 }
-
-/* Middle bar: fade out */
-#nav-toggle:checked ~ .navbar .line2 {
+#nav-toggle:checked ~ .toggle-btn .line2 {
 	opacity: 0;
 }
-
-/* Bottom bar: rotate counter-clockwise */
-#nav-toggle:checked ~ .navbar .line3 {
+#nav-toggle:checked ~ .toggle-btn .line3 {
 	transform: rotate(-45deg);
 }
-
-/* Slide sidebar out of view */
-#nav-toggle:checked ~ #sidebar {
-	transform: translateX(-200px);
-}
-
-/* Expand content to full width */
-#nav-toggle:checked ~ #content {
-	margin-left: 0;
-}
-
 
 footer{
 	text-align: center;
