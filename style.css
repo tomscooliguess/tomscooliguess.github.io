@@ -82,16 +82,10 @@ Button:active {
 
 /* 2. Floating Toggle Button (No black bar) */
 .toggle-btn {
-	position: fixed;
-	top: 20px;
-	left: 20px;
-	width: 30px;
-	height: 22px;
+	background: none;
+	border: none;
 	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	z-index: 3; /* Keeps it above everything */
+	padding: 0;
 	cursor: url('windows7_link.ico'), pointer;
 }
 
