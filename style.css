@@ -30,7 +30,6 @@ body {
   	grid-template-rows: auto 1fr auto; /* Header/Footer auto-size, Main fills space */
   	margin: 0;
   	cursor: url('windows7_arrow.ico'), default;  
-	cursor: url('windows7_link.ico'), pointer;
 }
 
 .background-image {
@@ -93,6 +92,7 @@ Button:active {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 3; /* Keeps it above everything */
+	cursor: url('windows7_link.ico'), pointer;
 }
 
 /* Animated hamburger lines */
@@ -130,6 +130,8 @@ Button:active {
 	font-weight: bold;
 	display: block;
 	transition: background 0.2s;
+	cursor: url('windows7_link.ico'), pointer;
+
 }
 
 /* Slightly darker blue hover state */
