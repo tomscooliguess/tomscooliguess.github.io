@@ -80,6 +80,12 @@ a{
 	cursor: url('windows7_link.ico'), pointer;
 }
 
+/* Welcome page body text */
+.titleEnter{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 /* 1. Hide the checkbox */
 .nav-toggle {
 	display: none;
