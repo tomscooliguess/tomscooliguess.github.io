@@ -75,6 +75,11 @@ Button:active {
 	top:1px;
 }
 
+a{
+	cursor: pointer;
+	cursor: url('windows7_link.ico'), pointer;
+}
+
 /* 1. Hide the checkbox */
 .nav-toggle {
 	display: none;
