@@ -145,7 +145,8 @@ Button:active {
 }
 
 .nav-toggle:checked ~ .navbar .menu-icon {
-  transform: scale(4px);
+	transform: scale(4px);
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 /* ========================================================= */
 /* CSS State Changes (When Checked / Opened) */
@@ -161,21 +162,6 @@ Button:active {
 	margin-left: 200px;
 }
 
-/* Change hamburger line colors to white when menu is open over the blue background */
-#nav-toggle:checked ~ .toggle-btn span {
-	background-color: #ffffff;
-}
-
-/* Transform hamburger to an X */
-#nav-toggle:checked ~ .toggle-btn .line1 {
-	transform: rotate(45deg);
-}
-#nav-toggle:checked ~ .toggle-btn .line2 {
-	opacity: 0;
-}
-#nav-toggle:checked ~ .toggle-btn .line3 {
-	transform: rotate(-45deg);
-}
 
 footer{
 	text-align: center;
