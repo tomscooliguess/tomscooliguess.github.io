@@ -145,7 +145,7 @@ Button:active {
 }
 
 .nav-toggle:checked ~ .navbar .menu-icon {
-  filter: blur(4px);
+  transform: scale(4px);
 }
 /* ========================================================= */
 /* CSS State Changes (When Checked / Opened) */
