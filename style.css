@@ -147,6 +147,7 @@ Button:active {
 .nav-toggle:checked ~ .navbar .menu-icon {
 	transform: scale(1.5);
 	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+	transform: translateX(-200px); 
 }
 /* ========================================================= */
 /* CSS State Changes (When Checked / Opened) */
