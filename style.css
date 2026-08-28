@@ -77,7 +77,7 @@ Button:active {
 
 a{
 	cursor: pointer;
-	cursor: url('windows7_link.ico'), pointer;
+	cursor: url('TenIsBowlOPENnoBGsmall.png'), pointer;
 	color: #5484a8;
 }
 
@@ -141,7 +141,6 @@ a{
 	font-weight: bold;
 	display: block;
 	transition: background 0.2s;
-	cursor: url('windows7_link.ico'), pointer;
 
 }
 
