@@ -63,7 +63,7 @@ Button {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #528ecc;
 	transform: scale(1.05);
-	cursor: url('windows7_link.ico'), pointer;
+	cursor: url('TenIsBowlOPENnoBGsmall.png'), pointer;
 
 }
 Button:hover {
@@ -106,7 +106,7 @@ a{
 	border: none;
 	cursor: pointer;
 	padding: 0;
-	cursor: url('windows7_link.ico'), pointer;
+	cursor: url('TenIsBowlOPENnoBGsmall.png'), pointer;
 }
 
 /* Animated hamburger lines */
