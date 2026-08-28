@@ -78,6 +78,7 @@ Button:active {
 a{
 	cursor: pointer;
 	cursor: url('windows7_link.ico'), pointer;
+	color: #7ab7e6;
 }
 
 /* Welcome page body text */
