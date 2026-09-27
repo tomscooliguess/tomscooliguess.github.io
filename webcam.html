@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puppet Show Monitor & Recorder</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: #000; overflow: hidden; font-family: sans-serif; }
+        video { width: 100vw; height: 100vh; object-fit: contain; transform: scaleX(-1); }
+        .controls { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 10px; }
+        button { padding: 12px 24px; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+        button:hover { opacity: 1; }
+        #recBtn { background: #ff4444; color: white; }
+        #stopBtn { background: #ffffff; color: black; display: none; }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button id="recBtn" onclick="startRecording()">🔴 Record Show</button>
+        <button id="stopBtn" onclick="stopRecording()">⏹️ Stop & Save</button>
+    </div>
+    <video id="monitor" autoplay playsinline></video>
+
+    <script>
+        let mediaRecorder;
+        let recordedChunks = [];
+
+        navigator.mediaDevices.getUserMedia({ video: { width: 1280, height: 720 }, audio: true })
+        .then(stream => { 
+            document.getElementById('monitor').srcObject = stream; 
+            // Prepare the recorder using standard web video formats
+            mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp8,opus' });
+            mediaRecorder.ondataavailable = (e) => { if (e.data.size > 0) recordedChunks.push(e.data); };
+            mediaRecorder.onstop = saveVideoFile;
+        })
+        .catch(err => { alert("Make sure DroidCam is connected first!"); });
+
+        function startRecording() {
+            recordedChunks = [];
+            mediaRecorder.start();
+            document.getElementById('recBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'block';
+        }
+
+        function stopRecording() {
+            mediaRecorder.stop();
+            document.getElementById('recBtn').style.display = 'block';
+            document.getElementById('stopBtn').style.display = 'none';
+        }
+
+        function saveVideoFile() {
+            const blob = new Blob(recordedChunks, { type: 'video/webm' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `puppet-show-${new Date().toISOString().slice(0,10)}.webm`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
+
