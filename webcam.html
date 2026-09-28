@@ -23,7 +23,7 @@
         let mediaRecorder;
         let recordedChunks = [];
 
-        navigator.mediaDevices.getUserMedia({ video: { width: 1280, height: 720 }, audio: false })
+        navigator.mediaDevices.getUserMedia({ video: { width: 1280, height: 720 }, audio: true })
             
         .then(stream => { 
             document.getElementById('monitor').srcObject = stream; 
